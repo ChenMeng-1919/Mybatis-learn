@@ -1,5 +1,6 @@
 package com.main;
 
+import com.SingleObject;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -15,13 +16,13 @@ public class Line extends Frame {
     public Line() throws HeadlessException {
         JFrame frame = new JFrame();
 
-        MyChart myChart1 = new MyChart();
+        MyChart myChart1 = new MyChart(1);
         JFreeChart myChartA = myChart1.getMyChart();
-        MyChart myChart2 = new MyChart();
+        MyChart myChart2 = new MyChart(2);
         JFreeChart myChartB = myChart2.getMyChart();
-        MyChart myChart3 = new MyChart();
+        MyChart myChart3 = new MyChart(3);
         JFreeChart myChartC = myChart3.getMyChart();
-        MyChart myChart4 = new MyChart();
+        MyChart myChart4 = new MyChart(4);
         JFreeChart myChartD = myChart4.getMyChart();
 
         ChartFrame mChartFrame1 = new ChartFrame("折线图1", myChartA);

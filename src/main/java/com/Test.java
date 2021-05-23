@@ -20,7 +20,7 @@ public class Test {
     public static void main(String[] args) throws IOException {
         //读取mybatis-config.xml
         InputStream is = null;
-            is = Resources.getResourceAsStream("mybatis-config.xml");
+        is = Resources.getResourceAsStream("mybatis-config.xml");
 
         //创建mybatis核心对象SqlSessionFactory
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);

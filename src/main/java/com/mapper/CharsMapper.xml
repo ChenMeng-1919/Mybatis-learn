@@ -18,7 +18,7 @@
         useGeneratedKeys="true" 使用数据库自动生成id策略  这个属性只对mysql数据库有效
         keyProperty="" 主键属性: 当使用数据库自动主键生成策略时,将自动生成主键值赋值给参数对象中那个属性
     -->
-    <insert id="save" parameterType="com.Entity.CharsEntity" keyProperty="id" useGeneratedKeys="true">
+    <insert id="save" parameterType="com.Entity.CharsEntity"  useGeneratedKeys="true">
         insert into chars values (#{id},#{chanel},#{number1},#{number2},
         #{number3},#{number4},#{number5},#{number6},#{number7},#{number8},#{time})
     </insert>
