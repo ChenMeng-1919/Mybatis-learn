@@ -100,9 +100,11 @@ public class MyChart {
 
     }
 
-    public void fexDataset() {
+    public void fexDataset(UDPServerInit udpServerInit) {
         this.dataList.remove(0);
-        this.dataList.add(Math.random() * (250));
+        this.dataList.add(udpServerInit.datelist.get(0));
+        udpServerInit.datelist.remove(0);
+        //udpServerInit.remvo();
         charsEntity.setNumber1(this.dataList.get(0));
         charsEntity.setNumber2(this.dataList.get(1));
         charsEntity.setNumber3(this.dataList.get(2));
